@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+
+@media screen and (min-width: 1000px) { /* THIS IS FOR DESKTOP SIZE */
+body{
+    background: rgba(255, 255, 255, 0.504);
+    text-align: center;
+    position: relative;
+}
+}
+
+
+@media screen and (min-width:500px){
+body{
+    background: rgba(255, 255, 255, 0.504);
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+
+    }
+nav {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    
+    
+}
+nav li{
+    height: 50px;
+    font-weight: 100;
+}
+nav a{
+   height: 100%;
+   padding: 0% 25px;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   color: rgb(0, 0, 0);
+   font-weight: 100;
+   font-size: 15px;
+   
+}
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.504);
+} 
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.504);
+    backdrop-filter: blur(10px);
+    box-shadow: -1-px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%
+}
+.right_nav{
+    display: flex;
+    gap: 50px;
+}
+.nav_cart_box{
+    display: none;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    menu-button{
+        display: block;
+    }
+}

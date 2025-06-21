@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> P2666957 | Nike Shoes Website</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <div class="logo">
+                <img id="logo" class="logo" src="css/icons/SNKRview_transparent.png" style="margin-top: 1%; height: 100px; width: 100px;">
+            </div>
+            <ul class="sidebar" style="display: none;"> <!-- Start with sidebar hidden -->
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="releases.html">Releases</a></li>
+                <li><a href="termsPrivacy.html">Terms</a></li>
+                <li><a href="termsPrivacy.html">Privacy</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="#releases">Releases</a></li>
+                <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+                <li class="hideOnMobile"><a href="biography.html">Biography</a></li>
+                <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="title">
+        <div class="title">
+            <span> Welcome to the SNKRView Welcome page </span>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <input type="text" id="searchBar" placeholder="Search for sneakers..." style="width: 50%; padding: 10px; font-size: 16px;">
+    </div>
+
+    <div class="sectiontitle" >
+        <h1 style="font-size: 18px;"> Here are the most popular basketball sneakers in the NBA </h1>
+    </div>
+
+    <section id="popular-sneakers" class="grid">
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/RPReplay_Final1712164967.mp4" style=" width: 390px;" type="video/mp4"></video>
+            <h2> 1.Kobe 6 protros </h2>
+            <h3> Retail Price: £165</h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/pg6.mp4" style=" width: 330px;" type="video/mp4"></video>
+            <h2> 2.PG 6 </h2>
+            <h3> Retail Price: £115.00 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/lebron20.mp4" style=" width: 350px;" type="video/mp4"></video>
+            <h2> 3.Lebron 20 </h2>
+            <h3> Retail Price: £180.00 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/kobe5.mp4" style=" width: 350px;" type="video/mp4"></video>
+            <h2> 4.Kobe 5 Protro</h2>
+            <h3> Retail Price: £190.00 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/kd15.mp4" style=" width: 320px;" type="video/mp4"></video>
+            <h2> 5.KD 15 </h2>
+            <h3> Retail Price: £129.99 </h3>
+        </div>
+    </section>
+
+    <div class="sectiontitle">
+        <h1> Most Worn sneakers </h1>
+    </div>
+
+    <section id="most-worn-sneakers" class="grid">
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/af1.mp4" style=" width: 390px;" type="video/mp4"></video>
+            <h2> Air Forces </h2>
+            <h3> Price: £110.00 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/dunk.mp4" style=" width: 400px;" type="video/mp4"></video>
+            <h2> Nike Dunk </h2>
+            <h3> Price: £110.00 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/jordan1.mp4" style=" width: 330px;" type="video/mp4"></video>
+            <h2> Jordan 1 </h2>
+            <h3> Price: £ 174.99 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/jordan4.mp4" style=" width: 350px;" type="video/mp4"></video>
+            <h2> Jordan 4 </h2>
+            <h3> Price: £164.99 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/airmax90.mp4" style=" width: 350px;" type="video/mp4"></video>
+            <h2> Nike Air max 90 </h2>
+            <h3> Price: £149.99 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay loop src="css/videos/converse.mp4" style=" width: 350px;" type="video/mp4"></video>
+            <h2> Converse Chuck Taylor </h2>
+            <h3> Price: £59.99 </h3>
+        </div>
+    </section>
+
+    <div class="sectiontitle">
+        <h1> Expensive sneakers </h1>
+    </div>
+
+    <section id="expensive-sneakers" class="grid">
+        <div class="box">
+            <video class="shoeVid" autoplay muted loop src="css/videos/jordanoffwehite.mp4" style=" width: 390px;" type="video/mp4"></video>
+            <h2> Jordan 1: Off white </h2>
+            <h3> Price: £4,886 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay muted loop src="css/videos/jordan4eminem.mp4" style=" width: 400px;" type="video/mp4"></video>
+            <h2> Jordan 4: Eminem x Carhartt </h2>
+            <h3> Price: £24,927 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay muted loop src="css/videos/nikeairmag.mp4" style=" width: 350px;" type="video/mp4"></video>
+            <h2> Nike Air Mags </h2>
+            <h3> Price: £26,707 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay muted loop src="css/videos/nike yeezy.mp4" style=" width: 350px;" type="video/mp4"></video>
+            <h2> Nike Yeezy </h2>
+            <h3> Price: £30,000 </h3>
+        </div>
+        <div class="box">
+            <video class="shoeVid" autoplay muted loop src="css/videos/jordanTravis.mp4" style=" width: 350px;" type="video/mp4"></video>
+            <h2> Jordan 1: x Travis Scott </h2>
+            <h3> Price: £1,180 </h3>
+        </div>
+  
+    </section>
+
+
+    <div class="sectiontitle">
+        <h1> Sneaker Release Dates </h1>
+            <h2> [UK]</h2>
+           </div>
+
+    <section id="sneaker-release-dates" class="grid">
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/12/new-balance-990v6-made-in-usa-true-camo-u990tb6_w400_h400_pad_.jpg.webp "style="width: 390px;"></img>
+                <h2>  02/05/24  </h2>
+                <h3>  New Balance 990v6 Made in USA True Camo  </h3>
+                <h4>  £220.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/11/nike-air-max-dn-black-metallic-grey-dv3337-006_w400_h400_pad_.jpeg.webp" style="width: 390px;"></img>
+                <h2>  03/05/24  </h2>
+                <h3>  Nike Air Max Dn Black Metallic Grey  </h3>
+                <h4>  £155.00 </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/04/engineered-garments-x-reebok-bb-4000-2-silver-metallic-22470740_w380_h380_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  03/05/24  </h2>
+                <h3>  Engineered Garments x Reebok BB 4000 2 Silver Metallic  </h3>
+                <h4>  £119.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/07/air-jordan-4-military-blue-fv5029-141-1_w380_h380_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  04/05/24  </h2>
+                <h3>  Air Jordan 4 Industrial Blue  </h3>
+                <h4>  £190.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/01/bad-bunny-x-adidas-campus-deep-brown-chalk-id2534_w380_h380_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  04/05/24  </h2>
+                <h3>  Bad Bunny x adidas Campus Deep Brown Chalk  </h3>
+                <h4>  £140.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/01/nike-alphafly-3-volt-fd8311-700_w300_h300_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  05/05/24  </h2>
+                <h3>  Nike Alphafly 3 Volt  </h3>
+                <h4>  £285.00 </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/08/air-jordan-5-se-sail_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  07/05/24  </h2>
+                <h3>  Air Jordan 5 SE Sail  </h3>
+                <h4>  £200.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/03/nocta-x-nike-hot-step-2-white-dz7293-100-side_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  09/05/24  </h2>
+                <h3>  NOCTA x Nike Hot Step 2 White  </h3>
+                <h4>  £185.00 </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/04/asics-us5-s-gel-quantum-kinetic-moss-bamboo-1203a403-300_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  10/05/24  </h2>
+                <h3>  ASICS US5-S Gel-Quantum Kinetic Moss Bamboo </h3>
+                <h4>  £265.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/03/air-jordan-1-retro-low-og-shadow-black_w400_h400_pad_.jpeg.webp" style="width: 380px;"></img>
+                <h2> 10/05/24 </h2>
+                <h3>   Air Jordan 1 Retro Low OG Shadow  </h3>
+                <h4>  £145.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/12/travis-scott-x-air-jordan-1-low-og-canary-dz4137-700-1_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  17/05/24  </h2>
+                <h3>  Travis Scott x Air Jordan 1 Low OG Canary  </h3>
+                <h4>  £145.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/07/air-jordan-12-red-taxi_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  18/05/27  </h2>
+                <h3>  Air Jordan 12 Red Taxi  </h3>
+                <h4>  £ TBC  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/10/air-jordan-4-white-oxidized-green-fq8138-103_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  25/05/24  </h2>
+                <h3>  Air Jordan 4 Oxidized Green  </h3>
+                <h4>  £190.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/07/air-jordan-6-reverse-oreo-ct8529-112_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  08/06/24  </h2>
+                <h3>  Air Jordan 6 Reverse Oreo  </h3>
+                <h4>  £200  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/01/air-jordan-4-se-smoke-grey_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  27/07/24 </h2>
+                <h3>  Air Jordan 4 SE Smoke Grey  </h3>
+                <h4>  £190 </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/12/air-jordan-4-retro-white-thunder-fq8138-001_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2> 24/08/24  </h2>
+                <h3> Air Jordan 4 Retro White Thunder   </h3>
+                <h4>  £200.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2023/12/air-jordan-3-cement-grey_w400_h400_pad_.jpeg.webp" style="width: 380px;"></img>
+                <h2>  31/08/27  </h2>
+                <h3>  Air Jordan 3 Cement Grey  </h3>
+                <h4>  £ TBC  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src=" https://cms-cdn.thesolesupplier.co.uk/2023/11/travis-scott-x-air-jordan-1-low-black-olive-dm7866-002_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  12/09/24 </h2>
+                <h3>  Travis Scott x Air Jordan 1 Low Black Olive  </h3>
+                <h4>  £ TBC </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/02/air-jordan-1-high-og-black-toe-reimagined_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  18/10/24   </h2>
+                <h3>  Air Jordan 1 High OG Black Toe Reimagined  </h3>
+                <h4>  £185.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/02/air-jordan-1-high-og-medium-olive-dz5485-200_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  16/11/24  </h2>
+                <h3>  Air Jordan 1 High OG Medium Olive  </h3>
+                <h4>  £175.00  </h4>
+        </div>
+        <div class="box">
+            <img class="shoePic" src="https://cms-cdn.thesolesupplier.co.uk/2024/01/air-jordan-5-black-cat-fz2239-001_w400_h400_pad_.jpg.webp" style="width: 380px;"></img>
+                <h2>  07/12/27   </h2>
+                <h3>  Air Jordan 5 Black Cat  </h3>
+                <h4>  £200.00 </h4>
+        </div>
+    
+
+    </section>
+       
+            <div class="link">
+                <!-- back to the top of the page -->
+                <a href="#logo" class="back-to-top-link"> Back to the top</a>
+            </div>
+
+    <footer>
+        <div class="footer">
+            <div class="box">
+            <p style="font-size: 14px;">© 2024 SNKRview. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    <script src="js/searchengine.js"></script>
+</body>
+</html>
